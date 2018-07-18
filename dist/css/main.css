@@ -1,7 +1,7 @@
 /* 
 ==============================================
-CONTENT:	Project Name Here
-AUTHOR:		Your Name Here
+CONTENT:	Hansel & Gretel E-book
+AUTHOR:		Cassandra Desrosiers & Danny McMillan
 ==============================================
 
 TABLE OF CONTENTS:
@@ -72,86 +72,61 @@ table {
 	box-sizing: border-box;
 }
 
-body {
+body, html {
 	background: #ccc;
 }
 
+.test {
+	width: 100px;
+	height: 100px;
+	margin: 20px;
+}
+
+section {
+	position: relative;
+}
+
+.part1 {
+	background: purple;
+	height: 100vh;
+}
+
+.part1 p {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.part1 .house {
+	background-color: black;
+}
+
+.part1 .trees {
+	background-color: green;
+}
+
+.part1 .sun {
+	background-color: yellow;
+}
+
+.part1 .path {
+	background-color: gray;
+}
+
+.part1 .hansel {
+	background-color: blue;
+}
+
+.part1 .gretel {
+	background-color: red;
+}
+
+.part2 {
+	background-color: orange;
+	height: 100vh;
+}
+
 /* 2. Content ================================= */
-.content {
-	position: relative;
-	font-family: sans-serif;
-	width: 90%;
-	max-width: 500px;
-	margin: 140px auto;
-	padding: 30px 20px 30px 30px;
-}
-
-.content .foreground {
-	position: relative;
-	z-index: 2;
-	transform: translateZ(100px);
-}
-
-.content .background {
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	left: 0;
-	top: 0;
-	background: white;
-	z-index: 1;
-	transition: 0.2s;
-	transform: translateX(20px) perspective(600px) rotateY(15deg);
-}
-
-.content:hover .background {
-	transform: translateX(-30px) perspective(600px) rotateY(-15deg);
-}
-
-.content .logo {
-	position: absolute;
-	top: -30px;
-	width: 60px;
-	z-index: 2;
-	transform: translateZ(100px);
-	transition: 0.3s;
-}
-
-.content .logo:hover {
-	transform: rotate(-0.4turn);
-}
-
-.content h1 {
-	font-weight: 700;
-	font-size: 22pt;
-	margin: 15px 0;
-}
-
-.content p {
-	color: #777;
-	line-height: 140%;
-}
-
-.content p.github {
-	font-size: 0.8em;
-}
-
-.content p.github a {
-	opacity: 0.2;
-	transition: 0.3s;
-}
-
-.content p.github a:hover {
-	opacity: 1;
-	color: red;
-}
-
-.content code {
-	position: absolute;
-	top: 20px;
-	right: 20px;
-	font-size: 0.8em;
-	opacity: 0.2;
-}
 
 /*# sourceMappingURL=main.css.map */
