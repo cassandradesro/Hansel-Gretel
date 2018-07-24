@@ -67,6 +67,15 @@ table {
 	border-spacing: 0;
 }
 
+.book-container {
+	overflow: hidden;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	background: red;
+}
+
 /* 1. Main Layout ================================= */
 * {
 	box-sizing: border-box;
