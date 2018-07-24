@@ -32,7 +32,6 @@ body, html {
 
 .part1{
 	width: 100%;
-	position: relative;
 	h1{
 		font-family: $header-font;
 		position: absolute;
@@ -43,15 +42,11 @@ body, html {
 	.house{
 	}
 	.sky{
-		position: absolute;
-		top: 0; 
-		left: 0;
 		width: 100%;
-		height: 100vh;
-		background-color: blue;
+		background-image: url(../img/sky.png);
+		background-repeat: no-repeat;
+		background-size: cover;
 		.cloud{
-			position: absolute;
-			top: 0;
 		}
 	}
 	.hills{
