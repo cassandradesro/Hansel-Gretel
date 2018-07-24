@@ -74,21 +74,12 @@ table {
 
 body, html {
 	background: #ccc;
-}
-
-.test {
-	width: 100px;
-	height: 100px;
-	margin: 20px;
-}
-
-section {
-	position: relative;
+	width: 100%;
 }
 
 .part1 {
-	background: purple;
-	height: 100vh;
+	width: 100%;
+	position: relative;
 }
 
 .part1 h1 {
@@ -99,29 +90,18 @@ section {
 	transform: translate(-50%, -50%);
 }
 
-.part1 .house {
-	background-color: black;
-}
-
-.part1 .trees {
-	background-color: green;
-}
-
-.part1 .sun {
-	background-color: yellow;
-}
-
-.part1 .path {
-	background-color: gray;
-}
-
-.part1 .hills {
+.part1 .sky {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
 	background-color: blue;
 }
 
-.part2 {
-	background-color: orange;
-	height: 100vh;
+.part1 .sky .cloud {
+	position: absolute;
+	top: 0;
 }
 
 /* 2. Content ================================= */

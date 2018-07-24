@@ -1,4 +1,4 @@
 "use strict";
 
-console.log("Hello World from app.js! \nChange this message, and make sure it changes in the browser \nto verify that you're working in the right files.");
+console.log("Hansel & Gretel Project. Developed by Cassandra Desrosiers and Danny McMillan. Designed by Carol Ehreth.");
 //# sourceMappingURL=main.js.map
