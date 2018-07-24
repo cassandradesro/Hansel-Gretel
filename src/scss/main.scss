@@ -15,7 +15,8 @@ TABLE OF CONTENTS:
 
 /* 0. Reset ================================= */
 @import 'reset';
-
+$header-font: 'Bigshot One', cursive;
+$copy-font: 'Alice', serif;
 
 /* 1. Main Layout ================================= */
 
@@ -38,8 +39,11 @@ section{
 .part1{
 		background: purple;
 		height: 100vh;
-
+	h1{
+		font-family: $header-font;
+	}
 	p{
+		font-family: $copy-font;
 		position: absolute;
 		top: 50%;
 		left: 50%;
