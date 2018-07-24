@@ -91,7 +91,8 @@ section {
 	height: 100vh;
 }
 
-.part1 p {
+.part1 h1 {
+	font-family: "Bigshot One", cursive;
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -114,12 +115,8 @@ section {
 	background-color: gray;
 }
 
-.part1 .hansel {
+.part1 .hills {
 	background-color: blue;
-}
-
-.part1 .gretel {
-	background-color: red;
 }
 
 .part2 {
