@@ -14,10 +14,9 @@ TABLE OF CONTENTS:
 */
 
 /* 0. Reset ================================= */
+@import 'viewports';
 @import 'reset';
 @import 'container';
-$header-font: 'Bigshot One', cursive;
-$copy-font: 'Alice', serif;
 
 /* 1. Main Layout ================================= */
 
@@ -31,29 +30,17 @@ body, html {
 }
 
 
-.part1{
-	width: 100%;
-	h1{
-		font-family: $header-font;
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate( -50%, -50%);
-	}
-	.house{
-	}
-	.sky{
-		width: 100%;
-		background-image: url(../img/sky.png);
-		background-repeat: no-repeat;
-		background-size: cover;
-		.cloud{
-		}
-	}
-	.hills{
-	}
 
-}
+
+
+
+
+
+
+
+
+
+
 
 
 

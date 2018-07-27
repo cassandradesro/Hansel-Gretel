@@ -67,21 +67,112 @@ table {
 	border-spacing: 0;
 }
 
-<<<<<<< HEAD
-.book-container {
-=======
 .story {
->>>>>>> 0555995726e2d05ad6ded21fcec9f8c4bdf224e6
 	overflow: hidden;
 	position: fixed;
 	left: 50%;
 	top: 50%;
 	transform: translate(-50%, -50%);
-<<<<<<< HEAD
-	background: red;
-=======
 	background: white;
->>>>>>> 0555995726e2d05ad6ded21fcec9f8c4bdf224e6
+}
+
+.story .part1 {
+	width: 100%;
+}
+
+.story .part1 .title {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	z-index: 1;
+}
+
+.story .part1 .title h1 {
+	font-family: "Bigshot One", cursive;
+	transform: translate(-50%, -50%);
+	font-size: 9vh;
+}
+
+.story .part1 .title .title-gretel {
+	transform: translate(0%, -80%);
+}
+
+.story .part1 .house {
+	position: absolute;
+	height: auto;
+	width: auto;
+	max-height: 21vh;
+	max-width: 31vw;
+	top: 40%;
+	left: 10%;
+}
+
+.story .part1 .sky {
+	width: 100%;
+	background-image: url(../img/sky.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.story .part1 .sky .cloud1 {
+	position: absolute;
+	height: auto;
+	width: auto;
+	max-width: 100vw;
+	max-height: 111vh;
+	top: -40%;
+	left: -40%;
+}
+
+.story .part1 .sky .cloud2 {
+	position: absolute;
+	height: auto;
+	width: auto;
+	max-width: 100vw;
+	max-height: 111vh;
+	top: -35%;
+	left: 0%;
+}
+
+.story .part1 .sky .cloud3 {
+	position: absolute;
+	height: auto;
+	width: auto;
+	max-width: 100vw;
+	max-height: 111vh;
+	top: -45%;
+	left: 50%;
+	transform: rotate(185deg);
+}
+
+.story .part1 .hills .hill1 {
+	position: absolute;
+	height: auto;
+	width: auto;
+	max-width: 100vw;
+	max-height: 111vh;
+	left: 20%;
+	top: 30%;
+}
+
+.story .part1 .hills .hill2 {
+	position: absolute;
+	height: auto;
+	width: auto;
+	max-width: 100vw;
+	max-height: 111vh;
+	top: 35%;
+	left: 0%;
+}
+
+.story .part1 .hills .hill3 {
+	position: absolute;
+	height: auto;
+	width: auto;
+	max-width: 100vw;
+	max-height: 111vw;
+	top: 65%;
+	left: -5%;
 }
 
 /* 1. Main Layout ================================= */
@@ -92,25 +183,6 @@ table {
 body, html {
 	background: #ccc;
 	width: 100%;
-}
-
-.part1 {
-	width: 100%;
-}
-
-.part1 h1 {
-	font-family: "Bigshot One", cursive;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-}
-
-.part1 .sky {
-	width: 100%;
-	background-image: url(../img/sky.png);
-	background-repeat: no-repeat;
-	background-size: cover;
 }
 
 /* 2. Content ================================= */
