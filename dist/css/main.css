@@ -67,13 +67,21 @@ table {
 	border-spacing: 0;
 }
 
+<<<<<<< HEAD
 .book-container {
+=======
+.story {
+>>>>>>> 0555995726e2d05ad6ded21fcec9f8c4bdf224e6
 	overflow: hidden;
 	position: fixed;
 	left: 50%;
 	top: 50%;
 	transform: translate(-50%, -50%);
+<<<<<<< HEAD
 	background: red;
+=======
+	background: white;
+>>>>>>> 0555995726e2d05ad6ded21fcec9f8c4bdf224e6
 }
 
 /* 1. Main Layout ================================= */
