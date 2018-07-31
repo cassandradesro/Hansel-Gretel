@@ -14,11 +14,14 @@ TABLE OF CONTENTS:
 */
 
 /* 0. Reset ================================= */
-@import 'viewports';
 @import 'reset';
 @import 'container';
+@import 'scene1';
 
 /* 1. Main Layout ================================= */
+
+$header-font: 'Bigshot One', cursive;
+$copy-font: 'Alice', serif;
 
 * {
 	box-sizing: border-box;
