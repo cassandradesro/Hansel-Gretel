@@ -92,17 +92,10 @@
 			max-height: 100vh;
 			top: -20%;
 			left: -20%;
-			animation: infinite 30s ease-in cloud1;
+			animation: infinite 45s ease-in cloud1;
 		}
 
-		@keyframes cloud1 {
-			from {
-				transform: translateX(-650px);
-			}
-			to {
-				transform: translateX(1100px);
-			}
-		}
+		
 
 		.cloud2 {
 			position: absolute;
@@ -112,6 +105,16 @@
 			max-height: 100vh;
 			top: -15%;
 			left: 15%;
+			animation: infinite 55s ease-in cloud2;
+		}
+
+		@keyframes cloud2 {
+			from {
+				transform: translateX(-1500px);
+			}
+			to {
+				transform: translateX(1100px);
+			}
 		}
 
 		.cloud3{
@@ -123,6 +126,16 @@
 			top: -30%;
 			left: 50%;
 			transform: rotate(185deg);
+			animation: infinite 55s ease-in cloud2;
+		}
+
+			@keyframes cloud3 {
+			from {
+				transform: translateX(-3000px);
+			}
+			to {
+				transform: translateX(1100px);
+			}
 		}
 
 	}
@@ -198,13 +211,22 @@
 }
 
 
-	@keyframes sun-rotate {
-		from {
-			transform: rotate(360deg);
-		}
-
-		to {
-			transform: rotate(0deg);
-		}
+@keyframes sun-rotate {
+	from {
+		transform: rotate(360deg);
 	}
+
+	to {
+		transform: rotate(0deg);
+	}
+}
+
+@keyframes cloud1 {
+	from {
+		transform: translateX(-650px);
+	}
+	to {
+		transform: translateX(1100px);
+	}
+}
 
