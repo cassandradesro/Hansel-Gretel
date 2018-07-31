@@ -159,15 +159,15 @@ table {
 	max-height: 100vh;
 	top: -20%;
 	left: -20%;
-	animation: infinite 90s ease-in cloud1;
+	animation: infinite 30s ease-in cloud1;
 }
 
 @keyframes cloud1 {
 	from {
-		transform: translateX(-700px);
+		transform: translateX(-650px);
 	}
 	to {
-		transform: translateX(1000px);
+		transform: translateX(1100px);
 	}
 }
 
