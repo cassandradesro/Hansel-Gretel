@@ -2,19 +2,9 @@
 
 $header-font: 'Bigshot One', cursive;
 
-
-.story {
-	overflow: hidden;
-	position: fixed;
-	left: 50%;
-	top: 50%;
-	transform: translate(-50%, -50%);
-	background: white;
-
-	.part1 {
+.part1 {
 	width: 100%;
-
-
+	// display: none;
 	.title {
 		position: absolute;
 		top: 25%;
@@ -61,7 +51,7 @@ $header-font: 'Bigshot One', cursive;
 		transition: 1s;
 	}
 
-	 .house {
+	.house {
 		position: absolute;
 		height: auto;
 		width: auto;
@@ -146,10 +136,10 @@ $header-font: 'Bigshot One', cursive;
 			height: auto;
 			width: auto;
 			max-width: 100vw; 
-    		max-height: 111vh;
-    		top: 35%;
-    		left: 0%;
-    		z-index: 3;
+			max-height: 111vh;
+			top: 35%;
+			left: 0%;
+			z-index: 3;
 		
 		}
 
@@ -158,16 +148,15 @@ $header-font: 'Bigshot One', cursive;
 			height: auto;
 			width: auto;
 			max-width: 100vw; 
-    		max-height: 111vw;
-    		top: 65%;
-    		left: -5%;
-    		z-index: 4;
+			max-height: 111vw;
+			top: 65%;
+			left: -5%;
+			z-index: 4;
 		}
 
 	}
+}
 
-}
-}
 
 
 
@@ -220,19 +209,25 @@ $header-font: 'Bigshot One', cursive;
 
 
 @keyframes cloud2 {
-		from {
-			transform: translateX(-1500px);
-		}
-		to {
-			transform: translateX(1100px);
-		}
+	from {
+		transform: translateX(-1500px);
 	}
+	to {
+		transform: translateX(1100px);
+	}
+}
 
 @keyframes cloud3 {
-		from {
-			transform: translateX(-3000px);
-		}
-		to {
-			transform: translateX(1100px);
-		}
+	from {
+		transform: translateX(-3000px);
 	}
+	to {
+		transform: translateX(1100px);
+	}
+}
+
+
+
+
+
+	

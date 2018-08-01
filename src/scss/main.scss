@@ -17,6 +17,8 @@ TABLE OF CONTENTS:
 @import 'reset';
 @import 'container';
 @import 'scene1';
+@import 'scene2';
+
 
 /* 1. Main Layout ================================= */
 
@@ -31,9 +33,14 @@ body, html {
 	background: #ccc;
 	width: 100%;
 }
-
-
-
+.story {
+	overflow: hidden;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	background: white;
+}
 
 
 

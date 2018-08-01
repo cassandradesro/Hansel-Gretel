@@ -1,0 +1,146 @@
+.part2{
+	// display: none;
+	.forest-bg{
+	   width: 100%;
+	   position: absolute;
+	
+	}
+	.path{
+		width: 100%;
+		top: -40%;
+		position: absolute;
+		z-index: 1;
+	}
+
+    .tree{
+    	height: auto;
+    	width: auto;
+    	position: absolute;
+    	max-height: 40vh;
+    	max-width: 40vw;
+
+    }
+
+    .right-side{
+    	.right-background-trees{ //dark green grass in background
+    		top: 13%;
+    		right: 0;
+    		z-index: 1;
+    		max-height: 71vh;
+    		max-width: 100vw;
+    	}
+        .right-tree1{ //front brown tree
+		    top: 35%;
+		    right: 0;
+		    z-index: 9;
+        }
+        .right-tree2{ //tree trunk
+		    top: 20%;
+		    right: 7%;
+		    z-index: 5;
+		    max-height: 65vh;
+		    max-width: 45vw;
+        }
+        .right-tree3{//yellow tree
+		    top: 15%;
+		    right: 15%;
+		    z-index: 7;
+		    max-height: 60vh;
+    		max-width: 60vw;
+        }
+        .right-tree4{//small red tree in corner
+		    top: 0;
+		    right: 0;
+		    z-index: 8;
+        }
+        .right-tree5{ //small blue tree
+		    top: 5%;
+		    right: 5%;
+		    z-index: 6;
+        }
+        .right-trunks { //decoration trunks under yellow tree
+			top: 26%;
+			right: 12%;
+			z-index: 6;
+			max-width: 11vw;
+        }
+        .right-stump{ // stump near path
+			top: 40%;
+			right: 17%;
+			z-index: 9;
+        }
+    }
+    .left-side{
+    	.left-background-trees{ //dark green grass in background
+    		top: 13%;
+    		left: 0;
+    		z-index: 1;
+    		max-height: 71vh;
+    		max-width: 100vw;
+    	}
+        .left-tree1{ //front brown tree
+		    top: 35%;
+		    left: 0;
+		    z-index: 9;
+        }
+        .left-tree2{ //tree trunk
+		    top: 20%;
+		    left: 7%;
+		    z-index: 5;
+		    max-height: 65vh;
+		    max-width: 45vw;
+        }
+        .left-tree3{//yellow tree
+		    top: 15%;
+		    left: 15%;
+		    z-index: 7;
+		    max-height: 60vh;
+    		max-width: 60vw;
+        }
+        .left-tree4{//small red tree in corner
+		    top: 0;
+		    left: 0;
+		    z-index: 8;
+        }
+        .left-tree5{ //small blue tree
+		    top: 5%;
+		    left: 5%;
+		    z-index: 6;
+        }
+        .left-tree6{ //small blue tree
+		    top: 5%;
+		    left: 5%;
+		    z-index: 6;
+        }
+        .left-trunks { //decoration trunks under yellow tree
+			top: 26%;
+			left: 12%;
+			z-index: 6;
+			max-width: 11vw;
+        }
+        .left-stump{ // stump near path
+			top: 40%;
+			right: 17%;
+			z-index: 9;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
