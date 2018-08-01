@@ -19,14 +19,27 @@ masterTimeline.add(part5Timeline)
 
 
 // animations for part 1
-part1Timeline.staggerFrom(".part1 .hills img", 1, {y: "200%"}, -0.3);
-part1Timeline.from(".part1 .house", 1, {rotation: "720deg", opacity: 0});
-part1Timeline.to({}, 2, {}) //pause
-part1Timeline.to(".part1 .house", 1, {rotation: "720deg", opacity: 0});
+part1Timeline.staggerFrom(".part1 .hills img", 1, {y: "200%"}, -0.3); //hills stagger in
+part1Timeline.from(".part1 .house", 1, {rotation: "720deg", opacity: 0}); // house rotates in
 
-part1Timeline.staggerTo(".part1 .hills img", 1, {y: "200%"}, -0.3);
+part1Timeline.to({}, 2, {}) //pause
+
+part1Timeline.to(".part1 .house", 1, {rotation: "720deg", opacity: 0}); // house rotates out
+part1Timeline.staggerTo(".part1 .hills img", 1, {y: "200%"}, -0.3); // hills rotate out
+part1Timeline.staggerTo(".part1 .sky img", 1, {y: "200%"}, -0.3); // sky rotates out
+part1Timeline.to(".part1", 2, {opacity: 0}) // go away
 
 // animations for part 2
+part2Timeline.to(".part2", 2, {opacity: 1})// come on scene
+part2Timeline.staggerFrom(".part2 .right-side img", 1, {y: "200%"}, -0.3);
+part2Timeline.staggerFrom(".part2 .left-side img", 1, {y: "200%"}, -0.3);
+part2Timeline.to({}, 2, {}) //pause
+part2Timeline.staggerTo(".part2 .right-side img", 1, {y: "200%"}, -0.3);
+part2Timeline.staggerTo(".part2 .left-side img", 1, {y: "200%"}, -0.3);
+
+
+
+
 
 // animations for part 3
 

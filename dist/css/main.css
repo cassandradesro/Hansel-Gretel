@@ -70,7 +70,7 @@ table {
 
 .part1 {
 	width: 100%;
-	display: none;
+	opacity: 1;
 }
 
 .part1 .title {
@@ -262,7 +262,7 @@ table {
 }
 
 .part2 {
-	display: none;
+	opacity: 0;
 }
 
 .part2 .forest-bg {
@@ -394,12 +394,22 @@ table {
 	max-height: 100%;
 }
 
-.part3 .crumb-background {
+.part3 {
+	display: none;
+}
+
+.part3 .crumb-bg {
+	background-color: #fffbf4;
 	width: 100%;
 	position: absolute;
 	top: 0;
 	right: 0;
-	z-index: -1;
+	z-index: 10;
+}
+
+.part3 .crumb {
+	max-width: 50%;
+	max-height: 50%;
 }
 
 /* 1. Main Layout ================================= */
@@ -413,6 +423,7 @@ body, html {
 }
 
 .story {
+	overflow: hidden;
 	position: fixed;
 	left: 50%;
 	top: 50%;
