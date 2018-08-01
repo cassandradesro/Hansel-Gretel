@@ -44,16 +44,14 @@ part2Timeline.staggerTo(".part2 .left-side img", 1, {y: "200%"}, -0.3);
 // animations for part 3
 
 // animations for part 4
-<<<<<<< Danny
-=======
+
 
 // animations for part 5
 
->>>>>>> master
+
 
 // animations for part 5
 
-<<<<<<< Danny
 
 
 // this is the magic part.
@@ -63,7 +61,7 @@ TweenMax.ticker.addEventListener("tick", function() {
 	// measure how far down the page we are, and jump the master timeline to the matching point
 	masterTimeline.progress((window.scrollY / document.documentElement.clientHeight) / VIEWPORTS_TALL);
 });
-=======
+
 // this is the magic part.
 // tweenmax's ticker is a super efficient "ticker" that runs at about 60 times a second on most computers,
 // but will intelligently slow down on slower computers so they don't get choppyy 
