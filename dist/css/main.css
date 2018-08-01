@@ -86,7 +86,6 @@ table {
 	top: 25%;
 	left: 20%;
 	z-index: 6;
-	animation: infinite 7s ease-in title-ani;
 }
 
 .story .part1 .title p {
