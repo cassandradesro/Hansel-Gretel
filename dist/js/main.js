@@ -25,13 +25,14 @@ masterTimeline.add(part5Timeline);
 
 
 part1Timeline.to(".title h1, .sky .scrolltext, .title h3 ", .5, { opacity: 0 }).to(".part1 .upon", 4, { opacity: 1 }).to(".storyTextIntro", 1.5, { opacity: 1 }).to(".part1 .upon", 1.5, { opacity: 0 }).to(".storyTextIntro", 1, { opacity: 0 }).staggerFrom(".part1 .hills img", 1, { y: "200%", ease: Back.easeOut }, .6) //hills stagger in
-.to(".part1 .sun", 1, { top: "15%" }).to(".part1 .house", 1, { left: "10%", opacity: 1 }).to({}, 10, {}) //pause
+.to(".storyText1", 2, { opacity: 1 }).to(".part1 .sun", 1, { top: "15%" }).to(".part1 .house", 1, { left: "10%", opacity: 1 }).to(".storyText1", 3, { opacity: 0 }).to(".storyText2", 2, { opacity: 1 }).to(".storyText2", 2, { opacity: 0 }).to({}, 10, {}) //pause
 .staggerTo(".part1 .hills img", 1, { y: "200%" }) // hills rotate out
 .staggerTo(".part1 .sky img", 1, { y: "200%" }); // sky rotates out
 
 
 // animations for part 2
-// part2Timeline.from(".part2", 2, {opacity: 0}, 10)
+// part2Timeline.staggerTo(".part2", 2, {opacity: 1});
+
 // part2Timeline.staggerTo(".part2", 2, {opacity: 1})
 // part2Timeline.to(".part2", 1, {opacity: 0})// come on scene
 // part2Timeline.staggerFrom(".part2 .right-side img", 1, {y: "10000%"}, -0.3);

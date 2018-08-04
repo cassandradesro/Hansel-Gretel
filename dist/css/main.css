@@ -97,9 +97,26 @@ table {
 	font-size: 3.5vh;
 	color: #3f817d;
 	z-index: 6;
+	opacity: 0;
 }
 
 .part1 .storyText1 .hText {
+	font-size: 6vh;
+	color: #1f3437;
+}
+
+.part1 .storyText2 {
+	position: absolute;
+	top: 5%;
+	left: 10%;
+	font-family: "Alice", serif;
+	font-size: 3.5vh;
+	color: #3f817d;
+	z-index: 6;
+	opacity: 0;
+}
+
+.part1 .storyText2 .sText {
 	font-size: 6vh;
 	color: #1f3437;
 }

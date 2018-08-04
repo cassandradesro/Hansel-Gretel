@@ -32,8 +32,25 @@ $header-font: 'Bigshot One', cursive;
 		font-size: 3.5vh;
 		color: #3f817d;
 		z-index: 6;
+		opacity: 0;
 
 		.hText {
+			font-size: 6vh;
+			color: #1f3437;
+		}
+	}
+
+	.storyText2 {
+		position: absolute;
+		top: 5%;
+		left: 10%;
+		font-family: $copy-font;
+		font-size: 3.5vh;
+		color: #3f817d;
+		z-index: 6;
+		opacity: 0;
+
+		.sText {
 			font-size: 6vh;
 			color: #1f3437;
 		}
