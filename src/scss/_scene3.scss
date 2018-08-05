@@ -1,0 +1,16 @@
+.part3{
+	display: none;
+
+	.crumb-bg{
+		background-color: rgb(255, 251, 244); //#fffbbf4
+		width: 100%;
+	   	position: absolute;
+	   	top: 0;
+	   	right: 0;
+	   	z-index:10;
+	}	
+	.crumb{
+		max-width: 50%;
+		max-height: 50%;
+	}
+}
