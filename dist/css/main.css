@@ -9,7 +9,7 @@ TABLE OF CONTENTS:
 
 0. Reset
 1. Main Layout
-2. Content
+2. Content 
 
 ==============================================
 */
@@ -68,90 +68,149 @@ table {
 	border-spacing: 0;
 }
 
-.story {
-	overflow: hidden;
-	position: fixed;
-	left: 50%;
-	top: 50%;
-	transform: translate(-50%, -50%);
-	background: white;
-}
-
-.story .part1 {
+.part1 {
 	width: 100%;
+	opacity: 1;
 }
 
-.story .part1 .title {
+.part1 .storyTextIntro {
+	position: absolute;
+	top: 26%;
+	left: 10%;
+	font-family: "Alice", serif;
+	font-size: 3.5vh;
+	color: #3f817d;
+	opacity: 0;
+	z-index: 6;
+}
+
+.part1 .storyTextIntro .aIntro {
+	font-size: 6vh;
+	color: #1f3437;
+}
+
+.part1 .storyText1 {
+	position: absolute;
+	top: 10%;
+	left: 55%;
+	font-family: "Alice", serif;
+	font-size: 3.5vh;
+	color: #3f817d;
+	z-index: 6;
+	opacity: 0;
+}
+
+.part1 .storyText1 .hText {
+	font-size: 6vh;
+	color: #1f3437;
+}
+
+.part1 .storyText2 {
+	position: absolute;
+	top: 5%;
+	left: 10%;
+	font-family: "Alice", serif;
+	font-size: 3.5vh;
+	color: #3f817d;
+	z-index: 6;
+	opacity: 0;
+}
+
+.part1 .storyText2 .sText {
+	font-size: 6vh;
+	color: #1f3437;
+}
+
+.part1 .title {
 	position: absolute;
 	top: 25%;
 	left: 20%;
 	z-index: 6;
 }
 
-.story .part1 .title p {
-	font-family: "Bigshot One", cursive;
-	position: absolute;
-	top: 65%;
-	left: -23%;
-	font-size: 3vh;
-}
-
-.story .part1 .title h1 {
+.part1 .title h1 {
 	font-family: "Bigshot One", cursive;
 	transform: translate(-50%, -50%);
 	font-size: 9vh;
+	color: #3f817d;
 }
 
-.story .part1 .title .title-gretel {
+.part1 .title .title-gretel {
 	transform: translate(0%, -80%);
 	color: #1f3437;
 }
 
-.story .part1 .title .title-hansel {
+.part1 .title .title-hansel {
+	transform: translate(-35%, -50%);
 	color: #3f817d;
 }
 
-.story .part1 .sun {
+.part1 .title h3 {
+	font-size: 5vh;
+	transform: translate(20%, -40%);
+	font-family: "Alice", serif;
+}
+
+.part1 .title .title-b {
+	font-size: 20vh;
+	color: #3f817d;
+}
+
+.part1 .title .title-G {
+	font-size: 20vh;
+	color: #1f3437;
+}
+
+.part1 .sun {
 	position: absolute;
 	height: auto;
 	width: auto;
 	max-height: 50vh;
 	max-width: 50vw;
-	top: 13%;
+	top: -100%;
 	left: 50%;
 	z-index: 1;
 	animation: sun-rotate 20s infinite linear;
 	transition: 1s;
 }
 
-.story .part1 .house {
+.part1 .house {
 	position: absolute;
 	height: auto;
 	width: auto;
-	max-height: 21vh;
-	max-width: 31vw;
+	max-height: 40vh;
+	max-width: 40vw;
 	top: 40%;
-	left: 10%;
+	left: -100%;
 	z-index: 5;
 }
 
-.story .part1 .sky {
+.part1 .upon {
+	font-family: "Bigshot One", cursive;
+	position: absolute;
+	top: 20%;
+	left: 10%;
+	font-size: 4vh;
+	opacity: 0;
+}
+
+.part1 .sky {
 	width: 100%;
 	background-image: url(../img/sky.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 
-.story .part1 .sky h2 {
+.part1 .sky h2 {
 	position: absolute;
 	top: 80%;
-	left: 40%;
+	left: 35%;
 	font-family: "Bigshot One", cursive;
 	font-size: 4vh;
 	z-index: 6;
 }
 
-.story .part1 .sky .cloud1 {
+.part1 .sky .cloud1 {
 	position: absolute;
 	height: auto;
 	width: auto;
@@ -162,7 +221,7 @@ table {
 	animation: infinite 45s ease-in cloud1;
 }
 
-.story .part1 .sky .cloud2 {
+.part1 .sky .cloud2 {
 	position: absolute;
 	height: auto;
 	width: auto;
@@ -173,7 +232,7 @@ table {
 	animation: infinite 55s ease-in cloud2;
 }
 
-.story .part1 .sky .cloud3 {
+.part1 .sky .cloud3 {
 	position: absolute;
 	height: auto;
 	width: auto;
@@ -185,7 +244,7 @@ table {
 	animation: infinite 55s ease-in cloud2;
 }
 
-.story .part1 .hills .hill1 {
+.part1 .hills .hill1 {
 	position: absolute;
 	height: auto;
 	width: auto;
@@ -196,7 +255,7 @@ table {
 	z-index: 2;
 }
 
-.story .part1 .hills .hill2 {
+.part1 .hills .hill2 {
 	position: absolute;
 	height: auto;
 	width: auto;
@@ -207,7 +266,7 @@ table {
 	z-index: 3;
 }
 
-.story .part1 .hills .hill3 {
+.part1 .hills .hill3 {
 	position: absolute;
 	height: auto;
 	width: auto;
@@ -216,20 +275,6 @@ table {
 	top: 65%;
 	left: -5%;
 	z-index: 4;
-}
-
-@keyframes title-ani {
-	0% {
-		transform: scale(0);
-		opacity: 0;
-	}
-	25% {
-		opacity: .4;
-	}
-	100% {
-		transform: scale(1);
-		opacity: 1;
-	}
 }
 
 @keyframes sun-rotate {
@@ -268,6 +313,157 @@ table {
 	}
 }
 
+.part2 {
+	opacity: 0;
+}
+
+.part2 .forest-bg {
+	width: 100%;
+	position: absolute;
+	z-index: 0;
+}
+
+.part2 .forest-grass {
+	width: 100%;
+	position: absolute;
+	z-index: 10;
+}
+
+.part2 .path {
+	width: 100%;
+	top: -40%;
+	position: absolute;
+	z-index: 2;
+}
+
+.part2 .tree {
+	position: absolute;
+	max-height: 50%;
+	max-width: 50%;
+}
+
+.part2 .right-side .right-background-trees {
+	top: 13%;
+	right: 0;
+	z-index: 1;
+}
+
+.part2 .right-side .right-tree1 {
+	top: 35%;
+	right: 0;
+	z-index: 9;
+}
+
+.part2 .right-side .right-tree2 {
+	top: 13%;
+	right: 8%;
+	max-height: 70%;
+	z-index: 5;
+}
+
+.part2 .right-side .right-tree3 {
+	top: 15%;
+	right: 13%;
+	z-index: 7;
+	max-height: 80%;
+}
+
+.part2 .right-side .right-tree4 {
+	top: 0;
+	right: 0;
+	z-index: 8;
+}
+
+.part2 .right-side .right-tree5 {
+	top: 5%;
+	right: 5%;
+	z-index: 6;
+}
+
+.part2 .right-side .right-trunks {
+	top: 30%;
+	right: 10%;
+	z-index: 6;
+	max-height: 18%;
+}
+
+.part2 .right-side .right-stump {
+	top: 29%;
+	right: 17%;
+	z-index: 9;
+}
+
+.part2 .left-side .left-background-trees {
+	top: 13%;
+	left: 0;
+	z-index: 1;
+}
+
+.part2 .left-side .left-tree1 {
+	top: 0;
+	left: 0;
+	z-index: 9;
+	max-height: 80%;
+}
+
+.part2 .left-side .left-tree2 {
+	top: 25%;
+	left: 0;
+	z-index: 8;
+}
+
+.part2 .left-side .left-tree3 {
+	top: 13%;
+	left: 19%;
+	z-index: 7;
+	max-height: 80%;
+}
+
+.part2 .left-side .left-tree4 {
+	top: 0;
+	left: 45%;
+	z-index: 6;
+}
+
+.part2 .left-side .left-tree5 {
+	top: -5%;
+	left: 0;
+	z-index: 4;
+	max-width: 50%;
+}
+
+.part2 .left-side .left-tree6 {
+	top: -2%;
+	left: 52%;
+	z-index: 5;
+	height: 25%;
+}
+
+.part2 .left-side .left-trunks {
+	top: 18%;
+	left: 6%;
+	z-index: 5;
+	max-height: 100%;
+}
+
+.part3 {
+	display: none;
+}
+
+.part3 .crumb-bg {
+	background-color: #fffbf4;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 10;
+}
+
+.part3 .crumb {
+	max-width: 50%;
+	max-height: 50%;
+}
+
 /* 1. Main Layout ================================= */
 * {
 	box-sizing: border-box;
@@ -276,6 +472,15 @@ table {
 body, html {
 	background: #ccc;
 	width: 100%;
+}
+
+.story {
+	overflow: hidden;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	background: white;
 }
 
 /* 2. Content ================================= */
