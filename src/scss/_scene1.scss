@@ -1,29 +1,79 @@
 
-
+$copy-font: 'Alice', serif;
 $header-font: 'Bigshot One', cursive;
 
 .part1 {
 	width: 100%;
 	opacity: 1;
+
+
+	.storyTextIntro {
+		position: absolute;
+		top: 26%;
+		left: 10%;
+		font-family: $copy-font;
+		font-size: 3.5vh;
+		color: #3f817d;
+		opacity: 0;
+		z-index: 6;
+		
+
+		.aIntro {
+			font-size: 6vh;
+			color: #1f3437;
+		} 
+	}
+
+	.storyText1 {
+		position: absolute;
+		top: 10%;
+		left: 55%;
+		font-family: $copy-font;
+		font-size: 3.5vh;
+		color: #3f817d;
+		z-index: 6;
+		opacity: 0;
+
+		.hText {
+			font-size: 6vh;
+			color: #1f3437;
+		}
+	}
+
+	.storyText2 {
+		position: absolute;
+		top: 5%;
+		left: 10%;
+		font-family: $copy-font;
+		font-size: 3.5vh;
+		color: #3f817d;
+		z-index: 6;
+		opacity: 0;
+
+		.sText {
+			font-size: 6vh;
+			color: #1f3437;
+		}
+	}
+
 	.title {
 		position: absolute;
 		top: 25%;
 		left: 20%;
 		z-index: 6;
-		animation: infinite 7s ease-in title-ani;
+<<<<<<< HEAD
+		// animation: infinite 7s ease-in title-ani;
+=======
+		animation: 1 3s ease-in title-ani;
 
-	p {
-		font-family: $header-font;
-		position: absolute;
-		top: 65%;
-		left: -23%;
-		font-size: 3vh;
-	}
+>>>>>>> ec023226e2395c6640a52d9e3f4fe21b15577537
+
 	
 	h1 {
 		font-family: $header-font;
 		transform: translate( -50%, -50%);
 		font-size: 9vh;
+		color: #3f817d;
 	}
 
 
@@ -33,8 +83,28 @@ $header-font: 'Bigshot One', cursive;
 		}
 
 	.title-hansel {
+			transform: translate(-35%, -50%);
 			color: #3f817d;
 		}
+
+	h3 {
+		font-size: 5vh;
+		transform: translate(20%, -40%);
+		font-family: $copy-font;
+	}	
+
+	.title-b {
+		font-size: 20vh;
+		color: #3f817d;
+	}
+
+	.title-G {
+		font-size: 20vh;
+		color: #1f3437;
+	}
+	
+
+
 
 	}
 
@@ -44,7 +114,7 @@ $header-font: 'Bigshot One', cursive;
 		width: auto;
 		max-height: 50vh;
 		max-width: 50vw;
-		top: 13%;
+		top: -100%;
 		left: 50%;
 		z-index: 1;
 		animation: sun-rotate 20s infinite linear;
@@ -55,13 +125,22 @@ $header-font: 'Bigshot One', cursive;
 		position: absolute;
 		height: auto;
 		width: auto;
-		max-height: 21vh;
-		max-width: 31vw;
+		max-height: 40vh;
+		max-width: 40vw;
 		top: 40%;
-		left: 10%;
+		left: -100%;
 		z-index: 5;
 	}
+	
 
+	.upon {
+		font-family: $header-font;
+		position: absolute;
+		top: 20%;
+		left: 10%;
+		font-size: 4vh;
+		opacity: 0;
+	}
 	
 	.sky{
 		width: 100%;
@@ -72,7 +151,7 @@ $header-font: 'Bigshot One', cursive;
 		h2 {
 			position: absolute;
 			top: 80%;
-			left: 40%;
+			left: 35%;
 			font-family: $header-font;
 			font-size: 4vh;
 			z-index: 6;
@@ -157,6 +236,8 @@ $header-font: 'Bigshot One', cursive;
 	}
 }
 
+<<<<<<< HEAD
+=======
 
 
 
@@ -170,19 +251,20 @@ $header-font: 'Bigshot One', cursive;
 
 
 
+>>>>>>> ec023226e2395c6640a52d9e3f4fe21b15577537
 // =================ANIMATIONS===============
 
 
 @keyframes title-ani {
 	0% {
-		transform: scale(0);
+		
 		opacity: 0;
 	}
 	25% {
-		opacity: .4;
+		opacity: .7;
 	}
 	100% {
-		transform: scale(1);
+		
 		opacity: 1;
 	}
 }
