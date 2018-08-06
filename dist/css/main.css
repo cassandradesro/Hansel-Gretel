@@ -9,7 +9,7 @@ TABLE OF CONTENTS:
 
 0. Reset
 1. Main Layout
-2. Content
+2. Content 
 
 ==============================================
 */
@@ -74,26 +74,66 @@ table {
 	display: none;
 }
 
+.part1 .storyTextIntro {
+	position: absolute;
+	top: 26%;
+	left: 10%;
+	font-family: "Alice", serif;
+	font-size: 3.5vh;
+	color: #3f817d;
+	opacity: 0;
+	z-index: 6;
+}
+
+.part1 .storyTextIntro .aIntro {
+	font-size: 6vh;
+	color: #1f3437;
+}
+
+.part1 .storyText1 {
+	position: absolute;
+	top: 10%;
+	left: 55%;
+	font-family: "Alice", serif;
+	font-size: 3.5vh;
+	color: #3f817d;
+	z-index: 6;
+	opacity: 0;
+}
+
+.part1 .storyText1 .hText {
+	font-size: 6vh;
+	color: #1f3437;
+}
+
+.part1 .storyText2 {
+	position: absolute;
+	top: 5%;
+	left: 10%;
+	font-family: "Alice", serif;
+	font-size: 3.5vh;
+	color: #3f817d;
+	z-index: 6;
+	opacity: 0;
+}
+
+.part1 .storyText2 .sText {
+	font-size: 6vh;
+	color: #1f3437;
+}
+
 .part1 .title {
 	position: absolute;
 	top: 25%;
 	left: 20%;
 	z-index: 6;
-	animation: infinite 7s ease-in title-ani;
-}
-
-.part1 .title p {
-	font-family: "Bigshot One", cursive;
-	position: absolute;
-	top: 65%;
-	left: -23%;
-	font-size: 3vh;
 }
 
 .part1 .title h1 {
 	font-family: "Bigshot One", cursive;
 	transform: translate(-50%, -50%);
 	font-size: 9vh;
+	color: #3f817d;
 }
 
 .part1 .title .title-gretel {
@@ -102,7 +142,24 @@ table {
 }
 
 .part1 .title .title-hansel {
+	transform: translate(-35%, -50%);
 	color: #3f817d;
+}
+
+.part1 .title h3 {
+	font-size: 5vh;
+	transform: translate(20%, -40%);
+	font-family: "Alice", serif;
+}
+
+.part1 .title .title-b {
+	font-size: 20vh;
+	color: #3f817d;
+}
+
+.part1 .title .title-G {
+	font-size: 20vh;
+	color: #1f3437;
 }
 
 .part1 .sun {
@@ -111,7 +168,7 @@ table {
 	width: auto;
 	max-height: 50vh;
 	max-width: 50vw;
-	top: 13%;
+	top: -100%;
 	left: 50%;
 	z-index: 1;
 	animation: sun-rotate 20s infinite linear;
@@ -122,11 +179,20 @@ table {
 	position: absolute;
 	height: auto;
 	width: auto;
-	max-height: 21vh;
-	max-width: 31vw;
+	max-height: 40vh;
+	max-width: 40vw;
 	top: 40%;
-	left: 10%;
+	left: -100%;
 	z-index: 5;
+}
+
+.part1 .upon {
+	font-family: "Bigshot One", cursive;
+	position: absolute;
+	top: 20%;
+	left: 10%;
+	font-size: 4vh;
+	opacity: 0;
 }
 
 .part1 .sky {
@@ -139,7 +205,7 @@ table {
 .part1 .sky h2 {
 	position: absolute;
 	top: 80%;
-	left: 40%;
+	left: 35%;
 	font-family: "Bigshot One", cursive;
 	font-size: 4vh;
 	z-index: 6;
@@ -210,20 +276,6 @@ table {
 	top: 65%;
 	left: -5%;
 	z-index: 4;
-}
-
-@keyframes title-ani {
-	0% {
-		transform: scale(0);
-		opacity: 0;
-	}
-	25% {
-		opacity: .4;
-	}
-	100% {
-		transform: scale(1);
-		opacity: 1;
-	}
 }
 
 @keyframes sun-rotate {
