@@ -5,8 +5,6 @@ $header-font: 'Bigshot One', cursive;
 .part1 {
 	width: 100%;
 	opacity: 1;
-
-
 	.storyTextIntro {
 		position: absolute;
 		top: 26%;
@@ -61,13 +59,6 @@ $header-font: 'Bigshot One', cursive;
 		top: 25%;
 		left: 20%;
 		z-index: 6;
-<<<<<<< HEAD
-		// animation: infinite 7s ease-in title-ani;
-=======
-		animation: 1 3s ease-in title-ani;
-
->>>>>>> ec023226e2395c6640a52d9e3f4fe21b15577537
-
 	
 	h1 {
 		font-family: $header-font;
@@ -104,9 +95,7 @@ $header-font: 'Bigshot One', cursive;
 	}
 	
 
-
-
-	}
+}
 
 	.sun {
 		position: absolute;
@@ -235,39 +224,8 @@ $header-font: 'Bigshot One', cursive;
 
 	}
 }
-
-<<<<<<< HEAD
-=======
-
-
-
-
-
-
-
-
-
-
-
-
-
->>>>>>> ec023226e2395c6640a52d9e3f4fe21b15577537
 // =================ANIMATIONS===============
 
-
-@keyframes title-ani {
-	0% {
-		
-		opacity: 0;
-	}
-	25% {
-		opacity: .7;
-	}
-	100% {
-		
-		opacity: 1;
-	}
-}
 
 
 @keyframes sun-rotate {
