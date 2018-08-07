@@ -89,6 +89,7 @@ part2Timeline.staggerTo(".part2", 1, { opacity: 1})
 part3Timeline
 .staggerTo(".part3", 1, {opacity: 1})
 
+
 // animations for part 4
 $('.part4').mousemove(function(e) {
   var x = e.pageX - this.offsetLeft;
