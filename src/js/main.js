@@ -78,10 +78,11 @@ part2Timeline.staggerTo(".part2", 1, { opacity: 1})
 .to(".part2 .storyTextPart2End .scene2EndText7 " ,1, {opacity: 1})
 .to(".part2 .storyTextPart2End .scene2EndText8 " ,4, {opacity: 1})
 .to(".left-tree1", 1, {rotation: 90, transformOrigin: "100% 100%", scale: 1.25})
-.to(".part2 .storyTextPart2End .scene2EndText3, .scene2EndText4, .scene2EndText5", .1, {zIndex: -1})
-.to(".part2 .storyTextPart2Intro" ,1, {opacity: 0}) // scene starts to end
+.to(".part2 .storyTextPart2End .scene2EndText1",1, {rotation: 360, x: "300%"})
+.to(".part2 .storyTextPart2End", .5, {opacity: 0})
 .staggerTo(".part2 .right-side img", 1, {y: "1000%"}, -0.3)
-.staggerTo(".part2 .left-side img", 1, {y: "1000%"}, -0.3);
+.staggerTo(".part2 .left-side img", 1, {y: "1000%"}, -0.3)
+.to(".part2" ,1, {opacity: 0});
 
 
 

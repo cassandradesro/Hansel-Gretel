@@ -73,6 +73,11 @@ table {
 	opacity: 1;
 }
 
+.part1 .skyScene1 {
+	opacity: 1;
+	z-index: -10;
+}
+
 .part1 .storyTextIntro {
 	position: absolute;
 	top: 26%;
@@ -194,14 +199,7 @@ table {
 	opacity: 0;
 }
 
-.part1 .sky {
-	width: 100%;
-	background-image: url(../img/sky.png);
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-
-.part1 .sky h2 {
+.part1 h2 {
 	position: absolute;
 	top: 80%;
 	left: 35%;
@@ -210,7 +208,7 @@ table {
 	z-index: 6;
 }
 
-.part1 .sky .cloud1 {
+.part1 .cloud1 {
 	position: absolute;
 	height: auto;
 	width: auto;
@@ -218,10 +216,10 @@ table {
 	max-height: 100vh;
 	top: -20%;
 	left: -20%;
-	animation: infinite 45s ease-in cloud1;
+	animation: 1 45s ease-in cloud1;
 }
 
-.part1 .sky .cloud2 {
+.part1 .cloud2 {
 	position: absolute;
 	height: auto;
 	width: auto;
@@ -229,10 +227,10 @@ table {
 	max-height: 100vh;
 	top: -15%;
 	left: 15%;
-	animation: infinite 55s ease-in cloud2;
+	animation: 1 55s ease-in cloud2;
 }
 
-.part1 .sky .cloud3 {
+.part1 .cloud3 {
 	position: absolute;
 	height: auto;
 	width: auto;
@@ -241,10 +239,10 @@ table {
 	top: -30%;
 	left: 50%;
 	transform: rotate(185deg);
-	animation: infinite 55s ease-in cloud2;
+	animation: 1 55s ease-in cloud2;
 }
 
-.part1 .hills .hill1 {
+.hills .hill1 {
 	position: absolute;
 	height: auto;
 	width: auto;
@@ -255,7 +253,7 @@ table {
 	z-index: 2;
 }
 
-.part1 .hills .hill2 {
+.hills .hill2 {
 	position: absolute;
 	height: auto;
 	width: auto;
@@ -266,7 +264,7 @@ table {
 	z-index: 3;
 }
 
-.part1 .hills .hill3 {
+.hills .hill3 {
 	position: absolute;
 	height: auto;
 	width: auto;
@@ -275,6 +273,71 @@ table {
 	top: 65%;
 	left: -5%;
 	z-index: 4;
+}
+
+.leaf1 {
+	position: absolute;
+	top: 60%;
+	left: 100%;
+	width: 3vw;
+}
+
+.leaf2 {
+	position: absolute;
+	top: 64%;
+	left: 100%;
+	width: 3vw;
+}
+
+.leaf3 {
+	position: absolute;
+	top: 57%;
+	left: 100%;
+	width: 3vw;
+}
+
+.leaf4 {
+	position: absolute;
+	top: 40%;
+	left: 110%;
+	width: 3vw;
+}
+
+.leaf5 {
+	position: absolute;
+	top: 54%;
+	left: 100%;
+	width: 3vw;
+}
+
+.leaf6 {
+	position: absolute;
+	top: 54%;
+	left: 140%;
+	width: 3vw;
+}
+
+.leaf7 {
+	position: absolute;
+	top: 58%;
+	left: 100%;
+	width: 3vw;
+}
+
+.storyText3 {
+	position: absolute;
+	top: 25%;
+	left: 15%;
+	font-family: "Alice", serif;
+	font-size: 3.5vh;
+	color: #3f817d;
+	z-index: 6;
+	opacity: 0;
+}
+
+.storyText3 .Otext {
+	font-size: 6vh;
+	color: #1f3437;
 }
 
 @keyframes sun-rotate {
@@ -317,6 +380,10 @@ table {
 	opacity: 0;
 }
 
+.part2 .sky {
+	z-index: 0;
+}
+
 .part2 .forest-bg {
 	width: 100%;
 	position: absolute;
@@ -334,12 +401,155 @@ table {
 	top: -40%;
 	position: absolute;
 	z-index: 2;
+	opacity: 1;
 }
 
 .part2 .tree {
 	position: absolute;
 	max-height: 50%;
 	max-width: 50%;
+}
+
+.part2 .storyTextPart2Intro {
+	font-family: "Alice", serif;
+	font-size: 3.5vh;
+	color: black;
+}
+
+.part2 .storyTextPart2Intro .Atext {
+	font-size: 5vh;
+	color: #1f3437;
+}
+
+.part2 .storyTextPart2Intro .scene2Text1 {
+	position: absolute;
+	top: 29%;
+	left: 59%;
+	z-index: 18;
+	opacity: 0;
+}
+
+.part2 .storyTextPart2Intro .scene2Text2 {
+	position: absolute;
+	top: 37%;
+	left: 59%;
+	z-index: 18;
+	opacity: 0;
+}
+
+.part2 .storyTextPart2Intro .scene2Text3 {
+	position: absolute;
+	top: 43%;
+	left: 56%;
+	z-index: 18;
+	opacity: 0;
+}
+
+.part2 .storyTextPart2Intro .scene2Text4 {
+	position: absolute;
+	top: 49%;
+	left: 55%;
+	z-index: 18;
+	opacity: 0;
+}
+
+.part2 .storyTextPart2Intro .scene2Text5 {
+	position: absolute;
+	top: 55%;
+	left: 54%;
+	z-index: 18;
+	opacity: 0;
+}
+
+.part2 .storyTextPart2Intro .scene2Text6 {
+	position: absolute;
+	top: 61%;
+	left: 53%;
+	z-index: 18;
+	opacity: 0;
+}
+
+.part2 .storyTextPart2Intro .scene2Text7 {
+	position: absolute;
+	top: 67%;
+	left: 51%;
+	z-index: 18;
+	opacity: 0;
+}
+
+.part2 .storyTextPart2End {
+	font-family: "Alice", serif;
+	font-size: 3.3vh;
+	color: black;
+}
+
+.part2 .storyTextPart2End .Btext {
+	font-size: 6vh;
+	color: #1f3437;
+}
+
+.part2 .storyTextPart2End .scene2EndText1 {
+	position: absolute;
+	top: 29%;
+	left: 57%;
+	z-index: 18;
+	opacity: 0;
+}
+
+.part2 .storyTextPart2End .scene2EndText2 {
+	position: absolute;
+	top: 37%;
+	left: 56%;
+	z-index: 18;
+	opacity: 0;
+}
+
+.part2 .storyTextPart2End .scene2EndText3 {
+	position: absolute;
+	top: 43%;
+	left: 53.5%;
+	z-index: 18;
+	opacity: 0;
+}
+
+.part2 .storyTextPart2End .scene2EndText4 {
+	position: absolute;
+	top: 49%;
+	left: 53.5%;
+	z-index: 18;
+	opacity: 0;
+}
+
+.part2 .storyTextPart2End .scene2EndText5 {
+	position: absolute;
+	top: 56%;
+	left: 49%;
+	z-index: 18;
+	opacity: 0;
+}
+
+.part2 .storyTextPart2End .scene2EndText6 {
+	position: absolute;
+	top: 62%;
+	left: 47%;
+	z-index: 18;
+	opacity: 0;
+}
+
+.part2 .storyTextPart2End .scene2EndText7 {
+	position: absolute;
+	top: 68%;
+	left: 45%;
+	z-index: 18;
+	opacity: 0;
+}
+
+.part2 .storyTextPart2End .scene2EndText8 {
+	position: absolute;
+	top: 75%;
+	left: 44%;
+	z-index: 18;
+	opacity: 0;
 }
 
 .part2 .right-side .right-background-trees {
@@ -402,7 +612,7 @@ table {
 .part2 .left-side .left-tree1 {
 	top: 0;
 	left: 0;
-	z-index: 9;
+	z-index: 20;
 	max-height: 80%;
 }
 
