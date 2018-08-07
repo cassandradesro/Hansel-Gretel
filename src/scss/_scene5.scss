@@ -1,0 +1,15 @@
+.part5 {
+	opacity: 0;
+	.scene5-bg{
+		width: 100%;
+		position: absolute;
+		top: 0;
+	}
+	.p{
+		color: #fff;
+		position: absolute;
+		left: 60%;
+		top: 50%;
+		z-index: 999;
+	}
+}

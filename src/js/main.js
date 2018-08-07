@@ -16,6 +16,7 @@ part2Timeline.duration();
 part2Timeline.delay(33);
 part3Timeline.delay(65);
 part4Timeline.delay(70);
+part5Timeline.delay(85);
 
 
 
@@ -110,16 +111,23 @@ part3Timeline.to(".part3 .crumb-1", 1, {top: "10%"})
 // animations for part 4
 part4Timeline.to(".part4",1, {opacity: 1})
 
+
 $('.part4').mousemove(function(e) {
-  console.log("part 4 mouse move")
-  var x = e.pageX - this.offsetLeft;
-  var y = e.pageY - this.offsetTop;
-  $('#flashlight').css({ 
-    'left': x - 1400,
-    'top': y 
-  });
+      console.log("part 4 mouse move!")
+      var x = e.pageX - this.offsetLeft;
+      var y = e.pageY - this.offsetTop;
+      $('#flashlight').css({ 
+        'left': x - 1400,
+        'top': y - 200
+      });
+    console.log("moving x:", x)
+    console.log("moving y:", y)
+});
+
+// part4Timeline.staggerTo(".part4",1, {opacity: 0});
 
 
+// part5Timeline.to(".part5" ,1, {opacity: 1, zIndex: 20});
 
 
 

@@ -18,6 +18,7 @@ part2Timeline.duration();
 part2Timeline.delay(33);
 part3Timeline.delay(65);
 part4Timeline.delay(70);
+part5Timeline.delay(85);
 
 masterTimeline.add(part1Timeline);
 masterTimeline.add(part2Timeline);
@@ -47,18 +48,38 @@ part3Timeline.to(".part3 .crumb-1", 1, { top: "10%" }).to(".part3 .crumb-2", 1, 
 // animations for part 4
 part4Timeline.to(".part4", 1, { opacity: 1 });
 
-var flashlight = function flashlight() {
-  $('.part4').mousemove(function (e) {
-    var x = e.pageX - this.offsetLeft;
-    var y = e.pageY - this.offsetTop;
-    $('#flashlight').css({
-      'left': x - 1500,
-      'top': y - 900
-    });
-    console.log("moving x:", x);
-    console.log("moving y:", y);
+$('.part4').mousemove(function (e) {
+  console.log("part 4 mouse move!");
+  var x = e.pageX - this.offsetLeft;
+  var y = e.pageY - this.offsetTop;
+  $('#flashlight').css({
+    'left': x - 1400,
+    'top': y - 200
   });
-};
+  console.log("moving x:", x);
+  console.log("moving y:", y);
+});
+
+// part4Timeline.staggerTo(".part4",1, {opacity: 0});
+
+
+// part5Timeline.to(".part5" ,1, {opacity: 1, zIndex: 20});
+
+
+// var flashlight = function(){
+//   $('.part4').mousemove(function(e) {
+//     var x = e.pageX - this.offsetLeft;
+//     var y = e.pageY - this.offsetTop;
+//     $('#flashlight').css({ 
+//       'left': x - 1500,
+//       'top': y - 900
+//     });
+//     console.log("moving x:", x)
+//     console.log("moving y:", y)
+
+//   });  
+// }
+
 
 // this is the magic part.
 // tweenmax's ticker is a super efficient "ticker" that runs at about 60 times a second on most computers,
