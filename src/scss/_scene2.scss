@@ -1,10 +1,15 @@
-.part2{
+
+.part2 {
 	opacity: 0;
-	// display: none;
+
+	.sky {
+		z-index: 0;
+	}
+
 	.forest-bg{
 	   	width: 100%;
 	   	position: absolute;
-	   	z-index:0;
+	   	z-index: 0;
 	
 	}
 	.forest-grass{
@@ -19,6 +24,7 @@
 		top: -40%;
 		position: absolute;
 		z-index: 2;
+		opacity: 1;
 	}
 
     .tree{
@@ -27,14 +33,163 @@
     	max-width: 50%;
 
     }
- //    p{
- //    	position: absolute;
- //    	width: 10%;
- //    	z-index: 11;
- //    	left: 50%;
- //    	top: 50%;
- //    	transform: translate(-50%, -50%);
-	// }
+
+
+    .storyTextPart2Intro {
+    	font-family: $copy-font;
+		font-size: 3.5vh;
+		color: black;
+
+		.Atext {
+			font-size: 5vh;
+			color: #1f3437;
+		}
+
+		.scene2Text1 {
+			position: absolute;
+			top: 29%;
+			left: 59%;
+			z-index: 18;
+			opacity: 0;
+
+		}
+
+		.scene2Text2 {
+			position: absolute;
+			top: 37%;
+			left: 59%;
+			z-index: 18;
+			opacity: 0;
+		}
+
+		.scene2Text3 {
+			position: absolute;
+			top: 43%;
+			left: 56%;
+			z-index: 18;
+			opacity: 0;
+		}
+
+		.scene2Text4 {
+			position: absolute;
+			top: 49%;
+			left: 55%;
+			z-index: 18;
+			opacity: 0;
+		}
+
+		.scene2Text5 {
+			position: absolute;
+			top: 55%;
+			left: 54%;
+			z-index: 18;
+			opacity: 0;
+		}
+
+		.scene2Text6 {
+			position: absolute;
+			top: 61%;
+			left: 53%;
+			z-index: 18;
+			opacity: 0;
+		}
+
+		.scene2Text7 {
+			position: absolute;
+			top: 67%;
+			left: 51%;
+			z-index: 18;
+			opacity: 0;
+		}
+
+    }
+
+
+      .storyTextPart2End {
+    	font-family: $copy-font;
+		font-size: 3.3vh;
+		color: black;
+
+		.Btext {
+			font-size: 6vh;
+			color: #1f3437;
+		}
+
+		.scene2EndText1 {
+			position: absolute;
+			top: 29%;
+			left: 57%;
+			z-index: 18;
+			opacity: 0;
+		}
+
+		.scene2EndText2 {
+			position: absolute;
+			top: 37%;
+			left: 56%;
+			z-index: 18;
+			opacity: 0;
+		}
+
+		.scene2EndText3 {
+			position: absolute;
+			top: 43%;
+			left: 53.5%;
+			z-index: 18;
+			opacity: 0;
+		}
+
+		.scene2EndText4 {
+			position: absolute;
+			top: 49%;
+			left: 53.5%;
+			z-index: 18;
+			opacity: 0;
+		}
+
+		.scene2EndText5 {
+			position: absolute;
+			top: 56%;
+			left: 49%;
+			z-index: 18;
+			opacity: 0;
+		}
+
+		.scene2EndText6 {
+			position: absolute;
+			top: 62%;
+			left: 47%;
+			z-index: 18;
+			opacity: 0;
+		}
+
+		.scene2EndText7 {
+			position: absolute;
+			top: 68%;
+			left: 45%;
+			z-index: 18;
+			opacity: 0;
+		}
+
+		.scene2EndText8 {
+			position: absolute;
+			top: 75%;
+			left: 44%;
+			z-index: 18;
+			opacity: 0;
+		}
+
+
+}	
+
+   //  p{
+   //  	position: absolute;
+   //  	width: 10%;
+   //  	z-index: 11;
+   //  	left: 50%;
+   //  	top: 50%;
+   //  	transform: translate(-50%, -50%);
+
    //  }
    //  .p1
 
@@ -115,7 +270,7 @@
         .left-tree1{ //tall yellow tree
 		    top: 0;
 		    left: 0;
-		    z-index: 9;
+		    z-index: 20;
 		    max-height: 80%;
         }
         .left-tree2{ //brown stalk tree on left
@@ -157,22 +312,3 @@
         }
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
