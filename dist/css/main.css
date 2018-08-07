@@ -771,12 +771,15 @@ table {
 	top: 0;
 }
 
-.part5 .p {
+.part5 p {
 	color: #fff;
 	position: absolute;
 	left: 60%;
 	top: 50%;
 	z-index: 999;
+	font-family: "Alice", serif;
+	font-size: 3.5vh;
+	opacity: 0;
 }
 
 /* 1. Main Layout ================================= */

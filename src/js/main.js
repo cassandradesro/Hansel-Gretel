@@ -111,23 +111,31 @@ part3Timeline.to(".part3 .crumb-1", 1, {top: "10%"})
 // animations for part 4
 part4Timeline.to(".part4",1, {opacity: 1})
 
+part4Timeline.call(function() {
 
-$('.part4').mousemove(function(e) {
-      console.log("part 4 mouse move!")
-      var x = e.pageX - this.offsetLeft;
-      var y = e.pageY - this.offsetTop;
-      $('#flashlight').css({ 
-        'left': x - 1400,
-        'top': y - 200
-      });
-    console.log("moving x:", x)
-    console.log("moving y:", y)
-});
+  $('.part4').mousemove(function(e) {
+        console.log("part 4 mouse move!")
+        var x = e.pageX - this.offsetLeft;
+        var y = e.pageY - this.offsetTop;
+        $('#flashlight').css({ 
+          'left': x - 1380,
+          'top': y - 100
+        });
+      console.log("moving x:", x)
+      console.log("moving y:", y)
+  });
+
+})
+.staggerTo(".part4", 40, { delay: 40})
+.to(".part4",1, {opacity: 0, display: 'none'});
+
 
 // part4Timeline.staggerTo(".part4",1, {opacity: 0});
 
 
-// part5Timeline.to(".part5" ,1, {opacity: 1, zIndex: 20});
+part5Timeline.to(".part5" ,1, {opacity: 1, zIndex: 20})
+
+.to(".part5 p" ,10, {opacity: 1});
 
 
 

@@ -5,11 +5,15 @@
 		position: absolute;
 		top: 0;
 	}
-	.p{
+	p{
 		color: #fff;
 		position: absolute;
 		left: 60%;
 		top: 50%;
 		z-index: 999;
+		font-family: $copy-font;
+		font-size: 3.5vh;
+		opacity: 0;
+
 	}
 }
