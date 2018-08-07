@@ -14,6 +14,8 @@ var part5Timeline = new TimelineMax();
 
 part1Timeline.duration();
 part2Timeline.delay(30);
+part3Timeline.delay(30);
+
 
 
 
@@ -51,13 +53,15 @@ part1Timeline.to(".title h1, .sky .scrolltext, .title h3 ", .5 , {opacity: 0})
 // animations for part 2
 part2Timeline
 .staggerTo(".part2", 1, {opacity: 1})
-.to(".part2", 1, {opacity: 1})
+// .to(".part2", 1, {opacity: 1})
 // .to(".part2", 1, {opacity: 0})// come on scene
 .staggerFrom(".part2 .right-side img", 1, {y: "10000%"}, -0.3)
 .staggerFrom(".part2 .left-side img", 1, {y: "10000%"}, -0.3)
 .to({}, 2, {}) //pause
+//add text here
 .staggerTo(".part2 .right-side img", 1, {y: "1000%"}, -0.3)
-.staggerTo(".part2 .left-side img", 1, {y: "1000%"}, -0.3);
+.staggerTo(".part2 .left-side img", 1, {y: "1000%"}, -0.3)
+.staggerTo(".part2", 1, {opacity: 0});
 
 
 
@@ -65,6 +69,8 @@ part2Timeline
 
 
 // animations for part 3
+part3Timeline
+.staggerTo(".part3", 1, {opacity: 1})
 
 // animations for part 4
 $('.part4').mousemove(function(e) {
@@ -78,16 +84,6 @@ $('.part4').mousemove(function(e) {
    console.log("moving y:", y)
 
 });
-// function update(e){
-//   var x = e.clientX || e.touches[0].clientX
-//   var y = e.clientY || e.touches[0].clientY
-
-//   document.querySelector(".part4").style.setProperty('--cursorX', x + 'px')
-//   document.querySelector(".part4").style.setProperty('--cursorY', y + 'px')
-// }
-
-// document.querySelector(".part4").addEventListener('mousemove',update)
-// document.querySelector(".part4").addEventListener('touchmove',update)
 
 // this is the magic part.
 // tweenmax's ticker is a super efficient "ticker" that runs at about 60 times a second on most computers,

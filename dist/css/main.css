@@ -71,7 +71,6 @@ table {
 .part1 {
 	width: 100%;
 	opacity: 1;
-	display: none;
 }
 
 .part1 .storyTextIntro {
@@ -316,7 +315,6 @@ table {
 
 .part2 {
 	opacity: 0;
-	display: none;
 }
 
 .part2 .forest-bg {
@@ -449,68 +447,57 @@ table {
 }
 
 .part3 {
-	display: none;
+	opacity: 0;
 }
 
 .part3 .crumb-bg {
-	background-color: #fffbf4;
-	width: 100%;
+	width: 80%;
 	position: absolute;
-	top: 0;
-	right: 0;
 	z-index: -1;
+	right: 0;
+	top: 0;
 }
 
 .part3 .crumb {
 	position: absolute;
+	z-index: 999;
+	max-width: 10%;
 }
 
 .part3 .crumb-1 {
-	width: 50%;
-	top: 0;
-	left: 40%;
+	width: 2%;
 }
 
 .part3 .crumb-2 {
-	width: 50%;
-	top: 0;
-	left: 0;
+	width: 10%;
 }
 
 .part3 .crumb-3 {
-	width: 50%;
-	top: 0;
-	left: 0;
+	width: 10%;
 }
 
 .part3 .crumb-4 {
-	width: 50%;
-	top: 0;
-	left: 0;
+	width: 5%;
 }
 
 .part3 .crumb-5 {
-	width: 50%;
-	top: 0;
-	left: 0;
+	width: 6%;
 }
 
 .part3 .crumb-6 {
-	width: 50%;
-	top: 0;
-	left: 0;
+	width: 7%;
 }
 
 .part3 .crumb-7 {
-	width: 50%;
-	top: 0;
-	left: 0;
+	width: 8%;
 }
 
 .part3 .crumb-8 {
-	width: 50%;
-	top: 0;
-	left: 0;
+	width: 2%;
+}
+
+.part4 {
+	opacity: 0;
 }
 
 .part4 .valley-bg {
@@ -547,7 +534,7 @@ body, html {
 	left: 50%;
 	top: 50%;
 	transform: translate(-50%, -50%);
-	background: white;
+	background-color: #fffbf4;
 }
 
 /* 2. Content ================================= */

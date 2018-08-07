@@ -1,56 +1,37 @@
 .part3{
-	display: none;
-
+	// display: flex;
+	// flex-direction: column;
+	// justify-content: center;
+	// align-items: center;
+	opacity: 0;
 	.crumb-bg{
-		background-color: rgb(255, 251, 244); //#fffbbf4
-		width: 100%;
+		// background-color: rgb(255, 251, 244); //#fffbbf4
+		width: 80%;
 	   	position: absolute;
-	   	top: 0;
-	   	right: 0;
 	   	z-index:-1;
+	   	right: 0;
+	   	top: 0;
 	}	
 	.crumb{
 		position: absolute;
+		z-index: 999;
+		max-width: 10%;
 	}
-
 	.crumb-1{
-		width: 50%;
-		top: 0;
-		left: 40%;
+		width: 2%;
 	}
 	.crumb-2{
-		width: 50%;
-		top: 0;
-		left: 0;
-	}
+		width: 10%;}
 	.crumb-3{
-		width: 50%;
-		top: 0;
-		left: 0;
-	}
+		width: 10%;}
 	.crumb-4{
-		width: 50%;
-		top: 0;
-		left: 0;
-	}
+		width: 5%;}
 	.crumb-5{
-		width: 50%;
-		top: 0;
-		left: 0;
-	}
+		width: 6%;}
 	.crumb-6{
-		width: 50%;
-		top: 0;
-		left: 0;
-	}
+		width: 7%;}
 	.crumb-7{
-		width: 50%;
-		top: 0;
-		left: 0;
-	}
+		width: 8%;}
 	.crumb-8{
-		width: 50%;
-		top: 0;
-		left: 0;
-	}
+		width: 2%;}
 }
