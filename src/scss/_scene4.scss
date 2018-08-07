@@ -1,5 +1,4 @@
 .part4{
-
 	opacity: 0;
 
 	.valley-bg{
@@ -9,7 +8,6 @@
 		z-index: 1;
 	}
 	
-
 	#flashlight {
 	  background: url(../img/scene4/night.png);
 	  // background-position: center center;
@@ -18,6 +16,7 @@
 	  z-index:999;
 	  height:3840%;
 	  width:2400%;
+	  top: 0; 
 	  pointer-events:none;
 	  cursor: pointer;
 	}

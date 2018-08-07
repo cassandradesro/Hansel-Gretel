@@ -216,7 +216,7 @@ table {
 	max-height: 100vh;
 	top: -20%;
 	left: -20%;
-	animation: 1 45s ease-in cloud1;
+	animation: 1 20s ease-in cloud1;
 }
 
 .part1 .cloud2 {
@@ -227,7 +227,7 @@ table {
 	max-height: 100vh;
 	top: -15%;
 	left: 15%;
-	animation: 1 55s ease-in cloud2;
+	animation: 1 20s ease-in cloud2;
 }
 
 .part1 .cloud3 {
@@ -239,7 +239,7 @@ table {
 	top: -30%;
 	left: 50%;
 	transform: rotate(185deg);
-	animation: 1 55s ease-in cloud2;
+	animation: 1 20s ease-in cloud2;
 }
 
 .hills .hill1 {
@@ -675,35 +675,67 @@ table {
 }
 
 .part3 .crumb-1 {
+	top: -100%;
+	left: 40%;
 	width: 2%;
 }
 
 .part3 .crumb-2 {
+	top: -100%;
+	left: 50%;
 	width: 10%;
 }
 
 .part3 .crumb-3 {
-	width: 10%;
+	top: -100%;
+	left: 60%;
+	width: 4%;
 }
 
 .part3 .crumb-4 {
-	width: 5%;
+	top: -100%;
+	left: 56%;
+	width: 6%;
 }
 
 .part3 .crumb-5 {
+	top: -100%;
+	left: 50%;
 	width: 6%;
 }
 
 .part3 .crumb-6 {
-	width: 7%;
+	top: -100%;
+	left: 30%;
+	width: 5%;
 }
 
 .part3 .crumb-7 {
-	width: 8%;
+	top: -100%;
+	left: 4%;
+	width: 5%;
 }
 
 .part3 .crumb-8 {
+	top: -100%;
+	left: 10%;
 	width: 2%;
+}
+
+.part3 .scene3Text1 {
+	position: absolute;
+	top: 35%;
+	left: -120%;
+	font-family: "Alice", serif;
+	font-size: 3.5vh;
+	color: #3f817d;
+	z-index: 20;
+	opacity: 0;
+}
+
+.part3 .scene3Text1 .textH {
+	font-size: 6vh;
+	color: #1f3437;
 }
 
 .part4 {
@@ -723,6 +755,7 @@ table {
 	z-index: 999;
 	height: 3840%;
 	width: 2400%;
+	top: 0;
 	pointer-events: none;
 	cursor: pointer;
 }
@@ -736,6 +769,18 @@ table {
 body, html {
 	background: #ccc;
 	width: 100%;
+}
+
+.background {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 999;
+	pointer-events: none;
 }
 
 .story {

@@ -12,7 +12,10 @@ var part4Timeline = new TimelineMax();
 var part5Timeline = new TimelineMax();
 
 part1Timeline.duration();
+part2Timeline.duration();
 part2Timeline.delay(33);
+part3Timeline.delay(65);
+part4Timeline.delay(70);
 
 
 
@@ -46,7 +49,8 @@ part1Timeline.to(".title h1, .sky .scrolltext, .title h3 ", .5 , {opacity: 0})
 .staggerTo(".part1 .leaf1, .leaf4", 1, {rotation: 360 , left: "-10%",top: "90%"})
 .staggerTo(".part1 .leaf2, .leaf6", 1, {rotation: 360 , left: "-10%",top: "90%"})
 .staggerTo(".part1 .leaf3", 1, {rotation: 360 , left: "-10%",top: "90%"})
-.to(".storyText3", 2, {opacity: 0});
+.to(".storyText3", 2, {opacity: 0})
+.to(".part1", 1, {opacity:0});
 
  // sky rotates out
 //pause
@@ -87,22 +91,52 @@ part2Timeline.staggerTo(".part2", 1, { opacity: 1})
 
 
 // animations for part 3
-part3Timeline
+
+part3Timeline.to(".part3 .crumb-1", 1, {top: "10%"})
+.to(".part3 .crumb-2", 1, {top: "20%"})
 .staggerTo(".part3", 1, {opacity: 1})
+.to(".part3 .crumb-3", 1, {top: "33%"})
+.to(".part3 .crumb-4", 1.5, {top: "50%"})
+.to(".part3 .scene3Text1", 2, {left: "5%", opacity: 1})
+.to(".part3 .crumb-5", 1.5, {top: "70%"})
+.to(".part3 .crumb-6", 1, {top: "80%"})
+.to(".part3 .crumb-7", 1.5, {top: "79%"})
+.to(".part3 .crumb-8", 1, {top: "90%"})
+.to(".part3",1, {opacity: 0});
+
+
 
 
 // animations for part 4
+part4Timeline.to(".part4",1, {opacity: 1})
+
 $('.part4').mousemove(function(e) {
+  console.log("part 4 mouse move")
   var x = e.pageX - this.offsetLeft;
   var y = e.pageY - this.offsetTop;
   $('#flashlight').css({ 
-    'left': x - 1500,
-    'top': y - 900
+    'left': x - 1400,
+    'top': y 
   });
-  console.log("moving x:", x)
-   console.log("moving y:", y)
 
-});
+
+
+
+
+// var flashlight = function(){
+//   $('.part4').mousemove(function(e) {
+//     var x = e.pageX - this.offsetLeft;
+//     var y = e.pageY - this.offsetTop;
+//     $('#flashlight').css({ 
+//       'left': x - 1500,
+//       'top': y - 900
+//     });
+//     console.log("moving x:", x)
+//     console.log("moving y:", y)
+
+//   });  
+// }
+
 
 // this is the magic part.
 // tweenmax's ticker is a super efficient "ticker" that runs at about 60 times a second on most computers,
