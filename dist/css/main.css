@@ -513,6 +513,24 @@ table {
 	left: 0;
 }
 
+.part4 .valley-bg {
+	width: 100%;
+	position: absolute;
+	top: 0;
+	z-index: 1;
+}
+
+.part4 #flashlight {
+	background: url(../img/scene4/night.png);
+	position: absolute;
+	z-index: 999;
+	height: 3840%;
+	width: 2400%;
+	pointer-events: none;
+	cursor: pointer;
+}
+
+/* Flashlight Overlay */
 /* 1. Main Layout ================================= */
 * {
 	box-sizing: border-box;

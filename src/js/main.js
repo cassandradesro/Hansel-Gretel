@@ -67,8 +67,27 @@ part2Timeline
 // animations for part 3
 
 // animations for part 4
+$('.part4').mousemove(function(e) {
+  var x = e.pageX - this.offsetLeft;
+  var y = e.pageY - this.offsetTop;
+  $('#flashlight').css({ 
+    'left': x - 1500,
+    'top': y - 900
+  });
+  console.log("moving x:", x)
+   console.log("moving y:", y)
 
+});
+// function update(e){
+//   var x = e.clientX || e.touches[0].clientX
+//   var y = e.clientY || e.touches[0].clientY
 
+//   document.querySelector(".part4").style.setProperty('--cursorX', x + 'px')
+//   document.querySelector(".part4").style.setProperty('--cursorY', y + 'px')
+// }
+
+// document.querySelector(".part4").addEventListener('mousemove',update)
+// document.querySelector(".part4").addEventListener('touchmove',update)
 
 // this is the magic part.
 // tweenmax's ticker is a super efficient "ticker" that runs at about 60 times a second on most computers,
