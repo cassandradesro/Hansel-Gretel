@@ -39,7 +39,8 @@ part2Timeline.staggerTo(".part2", 1, { opacity: 1 })
 // .to(".part2", 1, {opacity: 1})
 // .to(".part2", 1, {opacity: 0})// come on scene
 .staggerFrom(".part2 .right-side img", 1, { y: "10000%" }, -0.3).staggerFrom(".part2 .left-side img", 1, { y: "10000%" }, -0.3).to({}, 2, {}) //pause
-//add text here
+
+
 .staggerTo(".part2 .right-side img", 1, { y: "1000%" }, -0.3).staggerTo(".part2 .left-side img", 1, { y: "1000%" }, -0.3).staggerTo(".part2", 1, { opacity: 0 });
 
 // animations for part 3
