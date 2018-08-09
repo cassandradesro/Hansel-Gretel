@@ -2,7 +2,7 @@
 
 console.log("Hansel & Gretel Project. Developed by Cassandra Desrosiers and Danny McMillan. Designed by Carol Ehreth.");
 
-var VIEWPORTS_TALL = 3; // how tall is the body? the taller it is, the longer it will take to scroll.
+var VIEWPORTS_TALL = 300; // how tall is the body? the taller it is, the longer it will take to scroll.
 document.body.style.minHeight = VIEWPORTS_TALL * 100 + 100 + "vh";
 
 var masterTimeline = new TimelineMax({ paused: true });
