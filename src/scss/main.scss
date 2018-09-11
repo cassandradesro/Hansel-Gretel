@@ -27,16 +27,20 @@ TABLE OF CONTENTS:
 
 /* 1. Main Layout ================================= */
 
-$header-font: 'Bigshot One', cursive;
+$header-ß: 'Bigshot One', cursive;
 $copy-font: 'Alice', serif;
 
 * {
 	box-sizing: border-box;
 }
-
+p{
+	white-space: nowrap;
+}
 body, html {
 	background: #ccc;
 	width: 100%;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: auto;
 }
 .background{
 	position: fixed;

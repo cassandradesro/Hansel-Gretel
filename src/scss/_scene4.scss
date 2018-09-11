@@ -9,16 +9,23 @@
 	}
 	
 	#flashlight {
-	  background: url(../img/scene4/night.png);
-	  // background-position: center center;
-	  // background-color: blue;
-	  position:absolute;
-	  z-index:999;
-	  height:3840%;
-	  width:2400%;
-	  top: 0; 
-	  pointer-events:none;
-	  cursor: pointer;
+		background: url(../img/scene4/night.png);
+		// background-position: center center;
+		// background-color: blue;
+		position:absolute;
+		background-size: contain;
+		z-index:999;
+		height:200vw * (1800/2880);
+		width:200vw;
+		top: 0; 
+		top: 0; 
+		top: 0; 
+		top: 0; 
+		top: 0; 
+		pointer-events:none;
+		left: -100vw;
+		top: -73vw;
+		cursor: pointer;
 	}
 }
 

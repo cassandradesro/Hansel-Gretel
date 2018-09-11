@@ -10,7 +10,7 @@
 	}	
 	.crumb{
 		position: absolute;
-		z-index: 999;
+		z-index: 998;
 		max-width: 10%;
 	}
 	.crumb-1 {
@@ -43,12 +43,12 @@
 		left: 30%;
 		width: 5%;
 	}
-	.crumb-7{
+	.crumb-8{
 		top: -100%;
-		left: 4%;
+		left: 17%;
 		width: 5%;
 	}
-	.crumb-8{
+	.crumb-7{
 		top: -100%;
 		left: 10%;
 		width: 2%;
@@ -59,15 +59,15 @@
 	.scene3Text1 {
 		position: absolute;
 		top: 35%;
-		left: -120%;
+		// left: -120%;
 		font-family: $copy-font;
-		font-size: 3.5vh;
+		font-size: 2.5vw;
 		color: #3f817d;
-		z-index: 20;
+		z-index: 999;
 		opacity: 0;
 
 		.textH {
-			font-size: 6vh;
+			font-size: 6vw;
 			color: #1f3437;
 		}
 	}

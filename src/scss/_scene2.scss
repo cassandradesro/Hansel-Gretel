@@ -34,72 +34,55 @@
 
     }
 
+	.scene2Text{
+		position: absolute;
+		opacity: 0;
+		z-index: 18;
+	}
 
     .storyTextPart2Intro {
     	font-family: $copy-font;
-		font-size: 3.5vh;
+		font-size: 2vw;
 		color: black;
 
 		.Atext {
-			font-size: 5vh;
+			font-size: 5vw;
 			color: #1f3437;
 		}
-
+		
 		.scene2Text1 {
-			position: absolute;
-			top: 29%;
+			top: 26%;
 			left: 59%;
-			z-index: 18;
-			opacity: 0;
-
 		}
 
 		.scene2Text2 {
-			position: absolute;
 			top: 37%;
 			left: 59%;
-			z-index: 18;
-			opacity: 0;
 		}
 
 		.scene2Text3 {
-			position: absolute;
 			top: 43%;
 			left: 56%;
-			z-index: 18;
-			opacity: 0;
 		}
 
 		.scene2Text4 {
-			position: absolute;
 			top: 49%;
 			left: 55%;
-			z-index: 18;
-			opacity: 0;
 		}
 
 		.scene2Text5 {
-			position: absolute;
 			top: 55%;
 			left: 54%;
-			z-index: 18;
-			opacity: 0;
 		}
 
 		.scene2Text6 {
-			position: absolute;
 			top: 61%;
 			left: 53%;
-			z-index: 18;
-			opacity: 0;
 		}
 
 		.scene2Text7 {
-			position: absolute;
 			top: 67%;
 			left: 51%;
-			z-index: 18;
-			opacity: 0;
 		}
 
     }
@@ -107,76 +90,52 @@
 
       .storyTextPart2End {
     	font-family: $copy-font;
-		font-size: 3.3vh;
+		font-size: 2vw;
 		color: black;
 
 		.Btext {
-			font-size: 6vh;
+			font-size: 6vw;
 			color: #1f3437;
 		}
 
 		.scene2EndText1 {
-			position: absolute;
-			top: 29%;
+			top: 25%;
 			left: 57%;
-			z-index: 18;
-			opacity: 0;
 		}
 
 		.scene2EndText2 {
-			position: absolute;
 			top: 37%;
 			left: 56%;
-			z-index: 18;
-			opacity: 0;
 		}
 
 		.scene2EndText3 {
-			position: absolute;
 			top: 43%;
 			left: 53.5%;
-			z-index: 18;
-			opacity: 0;
 		}
 
 		.scene2EndText4 {
-			position: absolute;
 			top: 49%;
 			left: 53.5%;
-			z-index: 18;
-			opacity: 0;
 		}
 
 		.scene2EndText5 {
-			position: absolute;
 			top: 56%;
 			left: 49%;
-			z-index: 18;
-			opacity: 0;
 		}
 
 		.scene2EndText6 {
-			position: absolute;
 			top: 62%;
 			left: 47%;
-			z-index: 18;
-			opacity: 0;
 		}
 
 		.scene2EndText7 {
-			position: absolute;
 			top: 68%;
 			left: 45%;
-			z-index: 18;
-			opacity: 0;
 		}
 
 		.scene2EndText8 {
-			position: absolute;
 			top: 75%;
 			left: 44%;
-			z-index: 18;
-			opacity: 0;
 		}
 
 
